@@ -1,4 +1,3 @@
-Mousetrap.bind('/',submit_req());
 var submit = document.getElementById('submit_btn');
  submit.onclick =function (){
   var request = new XMLHttpRequest();
