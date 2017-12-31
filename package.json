@@ -1,0 +1,18 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "description": "app to find weather details",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shubham soni",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "request": "*",
+    "path": "*",
+    "body-parser": "*",
+    "mousetrap": "*"
+  }
+}

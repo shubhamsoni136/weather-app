@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="icon" type="image/png" href="icon.png">
+      <link href='https://fonts.googleapis.com/css?family=Bubbler One' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    </head>
+    <body style="background-color:#FFC914;text-align:center">
+      <img src="logo.png" height="100px"/>
+      <h1 style="font-size:60px;margin-top:0px;font-family: 'Bubblegum Sans'">Weather App</h1>
+      <h3 style="font-size:35px;margin-top:-30px;font-family: 'Bubbler One'">authentic weather partner</h3>
+      <div style="margin-top:100px">
+        <input id="locationTextField" type="text" size="50" style="width:340px;height:30px;font-size:20px;border-radius:5px;background-color:black;border:none;color:#EEEEEE;padding-left:5px;font-family: 'Bubbler One'">
+        <button id="submit_btn" style="border:none;font-size:25px;background-color:#FFC914">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <h3 style="font-size:40px;position:relative;margin-top:120px;font-family: 'Annie Use Your Telescope'">Made With <i class="fa fa-heart" style="color:red"></i> By Shubham</h3>
+      <h3 style="font-size:30px">
+        <a href="https://www.facebook.com/shubhamsoni136" style="color:black"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/shubh_am_28" style="color:black"><i class="fa fa-instagram" style="padding-left:50px"></i></a>
+        <a href="https://twitter.com/sony_shubh" style="color:black"><i class="fa fa-twitter" style="padding-left:50px"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-soni-aa46b3122" style="color:black"><i class="fa fa-linkedin" style="padding-left:50px"></i></a>
+      </h3>
+      <script>
+        function init() {
+          var input = document.getElementById('locationTextField');
+          var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+        google.maps.event.addDomListener(window, 'load', init);
+      </script>
+      <script src="/main.js"></script>
+    </body>
+</html>
