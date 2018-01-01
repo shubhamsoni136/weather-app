@@ -13,6 +13,6 @@
     "request": "*",
     "path": "*",
     "body-parser": "*",
-    "mousetrap": "*"
+    "ejs": "*"
   }
 }

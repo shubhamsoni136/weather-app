@@ -1,13 +1,14 @@
 var request = require('request');
+var ejs = require('ejs');
 var express = require("express");
-var Mousetrap = require('mousetrap');
 var bodyParser = require("body-parser");
 var path = require("path");
 var app = express();
+app.set('view engine','ejs')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get("/",function(req,res){
-  res.sendFile(path.join(__dirname , 'home.html'));
+  res.render('home');
 });
 app.post("/weather",function(req,res){
   var d = req.body.data;
