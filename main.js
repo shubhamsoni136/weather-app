@@ -4,7 +4,7 @@ submit.onclick =function (){
   request.onreadystatechange = function(){
     if(request.readyState===XMLHttpRequest.DONE){
       if(request.status===200){
-        alert((JSON.parse(request.responseText).list[0].main.temp_max)/10);
+        document.getElementById('shubham').innerHTML=request.responseText.toString();
       }else{
         alert(request.responseText.toString());
       }

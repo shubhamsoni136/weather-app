@@ -1,0 +1,69 @@
+<html>
+<div style="background-color:#FFC914;text-align:center;">
+  <h1 style="font-size:60px;margin-top:40px;font-family: 'Bubblegum Sans'">Result</h1>
+  <div class=container>
+    <div class="container1">
+      <div class="box">
+        <span class ="temp"><%=Math.round((data.list[0].main.temp)/10)%><sup>&deg;C</sup></span></br>
+        <span class="condition"><%=data.list[0].weather[0].main%></span></br>
+        <span class="description"><%=data.list[0].weather[0].description%></span><br>
+        <div class="details">
+          <span class="location"><%=data.city.name%></span></br>
+          <span class="date"><%=data.list[0].dt_txt.split(" ")[0]%></span></br>
+          <span class="time"><%=data.list[0].dt_txt.split(" ")[1]%></span>
+        </div>
+      </div>
+      <div class="box">
+        <span class ="temp"><%=Math.round((data.list[1].main.temp)/10)%><sup>&deg;C</sup></span></br>
+        <span class="condition"><%=data.list[1].weather[0].main%></span></br>
+        <span class="description"><%=data.list[1].weather[0].description%></span><br>
+        <div class="details">
+          <span class="location"><%=data.city.name%></span></br>
+          <span class="date"><%=data.list[1].dt_txt.split(" ")[0]%></span></br>
+          <span class="time"><%=data.list[1].dt_txt.split(" ")[1]%></span>
+        </div>
+      </div>
+      <div class="box">
+        <span class ="temp"><%=Math.round((data.list[2].main.temp)/10)%><sup>&deg;C</sup></span></br>
+        <span class="condition"><%=data.list[2].weather[0].main%></span></br>
+        <span class="description"><%=data.list[2].weather[0].description%></span><br>
+        <div class="details">
+          <span class="location"><%=data.city.name%></span></br>
+          <span class="date"><%=data.list[2].dt_txt.split(" ")[0]%></span></br>
+          <span class="time"><%=data.list[2].dt_txt.split(" ")[1]%></span>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="box">
+        <span class ="temp"><%=Math.round((data.list[3].main.temp)/10)%><sup>&deg;C</sup></span></br>
+        <span class="condition"><%=data.list[3].weather[0].main%></span></br>
+        <span class="description"><%=data.list[3].weather[0].description%></span><br>
+        <div class="details">
+          <span class="location"><%=data.city.name%></span></br>
+          <span class="date"><%=data.list[3].dt_txt.split(" ")[0]%></span></br>
+          <span class="time"><%=data.list[3].dt_txt.split(" ")[1]%></span>
+        </div>
+      </div>
+      <div class="box"><span class ="temp"><%=Math.round((data.list[4].main.temp)/10)%><sup>&deg;C</sup></span></br>
+        <span class="condition"><%=data.list[4].weather[0].main%></span></br>
+        <span class="description"><%=data.list[4].weather[0].description%></span><br>
+        <div class="details">
+          <span class="location"><%=data.city.name%></span></br>
+          <span class="date"><%=data.list[4].dt_txt.split(" ")[0]%></span></br>
+          <span class="time"><%=data.list[4].dt_txt.split(" ")[1]%></span>
+        </div>
+      </div>
+      <div class="box"><span class ="temp"><%=Math.round((data.list[5].main.temp)/10)%><sup>&deg;C</sup></span></br>
+        <span class="condition"><%=data.list[5].weather[0].main%></span></br>
+        <span class="description"><%=data.list[5].weather[0].description%></span><br>
+        <div class="details">
+          <span class="location"><%=data.city.name%></span></br>
+          <span class="date"><%=data.list[5].dt_txt.split(" ")[0]%></span></br>
+          <span class="time"><%=data.list[5].dt_txt.split(" ")[1]%></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</html>
